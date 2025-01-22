@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Portal das Pizzas</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logooriginal.png" alt="Logo" width="130" height="90" class="d-inline-block align-text-top logoprincipal">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="background-color: black;">
+                <span class="navbar-toggler-icon" style="
+                    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3E%3Cpath stroke=%27white%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+                "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    
+                    <a class="nav-link" href="#aplicativo-section">Aplicativo</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="promotionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Promoções
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="promotionsDropdown">
+                            <li><a class="dropdown-item" href="promocao1.html"><span style="color: #FDC806;">Promoção 1 - </span> À retirar no balcão R$ 38,99 </a></li>
+                            <li><a class="dropdown-item" href="promocao1.html"><span style="color: #FDC806;">Promoção 2 -</span> Terça à Quinta R$ 41,99</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#menuModal">Menu de Pizzas</a>
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contatos & Endereço</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-black">
+            <div class="modal-header">
+                <h5 class="modal-title" id="menuModalLabel">Menu de Pizzas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="img/card1.png" alt="Imagem do Cardápio" class="img-fluid" style="max-width: 100%; height: auto;">
+                <img src="img/card2.png" alt="Imagem do Cardápio" class="img-fluid" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="modal-footer">
+                <a href="pdfs/Portal das Pizzas dezembro atual.pdf" download="Portal-das-Pizzas" class="btn btn-light" style="background-color: #FDC806; color: rgb(0, 0, 0);">Baixar Cardápio</a>
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal" style="background-color: #FDC806; color: rgb(0, 0, 0);">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-black text-white">
+    <div class="modal-header border-0 justify-content-center">
+        <img src="img/logooriginal.png" alt="Logo" width="130" height="90" class="d-inline-block align-text-top">
+        <h5 class="modal-title" id="appDownloadModalLabel" >Contatos & Endereço</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+    <div class="text-center mb-3">
+        <p style="background-color: #4AC958; padding: 10px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+            <i class="fab fa-whatsapp" style="color: white; margin-right: 10px;"></i>
+            <a href="https://wa.me/11937792291" class="no-link" style="color: black;">11 93779-2291</a>
+        </p>
+        
+        <p style="background-color: #FDC806; padding: 10px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-phone" style="color: green; margin-right: 10px;"></i>
+            <a href="tel:+5520434191" class="no-link" style="color: black;">2043-4191</a>
+        </p>
+        
+        <p style="background-color: #FDC806; padding: 10px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-phone" style="color: green; margin-right: 10px;"></i>
+            <a href="tel:+5523320185" class="no-link" style="color: black;">2361-0535</a>
+        </p>
+        
+        <p style="background-color: #FDC806; padding: 10px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-phone" style="color: green; margin-right: 10px;"></i>
+            <a href="tel:+5520430168" class="no-link" style="color: black;">2043-0168</a>
+        </p>
+        
+        <p style="background-color: #FDC806; padding: 10px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-phone" style="color: green; margin-right: 10px;"></i>
+            <a href="tel:+5522805757" class="no-link" style="color: black;">2280-5757</a>
+        </p>
+      </div>
+    <div class="text-center mb-3">
+        <h5 class="modal-title">Nossa Localização</h5>
+    </div>
+    <div class="map-container text-center mb-3">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4377.235702691554!2d-46.48863932467078!3d-23.531914578820096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61102211a5ab%3A0xfd480cf66ca4ab27!2sPizzaria%20Portal%20das%20Pizzas!5e1!3m2!1spt-BR!2sbr!4v1736631730613!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+
+          <div class="modal-footer border-0">
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Pizzaria+Portal+das+Pizzas,+São+Paulo,+SP" 
+                 target="_blank" class="btn btn-light" style="background-color: #FDC806; color: rgb(0, 0, 0);">
+                 Ir para o Local
+              </a>
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal" style="background-color: #FDC806; color: rgb(0, 0, 0);">
+                  Fechar
+              </button>
+          </div>
+    </div>
+  </div>
+</div>
+
+<div class="image-container ">
+  <img src="img/22b48a22-b903-4b70-918a-f6dc77d24c5c.png" alt="Imagem" width="500" height="500">
+  <div class="overlay fade-in">
+      <p>Sabor irresistível, entregue para você!</p>
+      <button class="btn-order"><a href="https://play.google.com/store/search?q=portal+das+pizzas&c=apps&hl=pt_BR">Faça Seu pedido pelo nosso app</a></button>
+          <img src="img/logooriginal.png" alt="Logo menor" width="95" height="70"class="logo-menor">
+  </div>
+</div>
+
+
+<div class="retangulo-preto ">
+      <div class="slider fade-in">
+        <h1 id="aplicativo-section" >Pizzas</h1>
+        <div class="roda fade-in">
+          <div class="pizza-item amn fade-in">
+            <img src="img/Americana-meio-Natasha.png" alt="Americana e Natasha">
+            <p>Americana & Natasha</p>
+          </div>
+          <div class="pizza-item fade-in ">
+            <img src="img/A Moda do Chefe efeito encaixe.png" alt="A Moda do Chefe">
+            <p>A Moda do Chefe</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Atum 1  marguerita.png" alt="Atum e Marguerita">
+            <p>Atum & Marguerita</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Baiana dois-meio-Natasha.png" alt="Baiana e Natasha">
+            <p>Baiana & Natasha</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Brócolis com baconToscana.png" alt="Brócolis com Bacon e Toscana">
+            <p>Brócolis com Bacon & Toscana</p>
+          </div>
+          <div class="pizza-item cci fade-in">
+            <img src="img/Calabacon com cheddar-meia-Italiana sem tomate.png" alt="Calabacon com Cheddar e Italiana">
+            <p>Calabacon com Cheddar & Italiana</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Calabacon-meio-star.png" alt="Calabacon e Star">
+            <p>Calabacon & Star</p>
+          </div>
+          <div class="pizza-item cbc fade-in">
+            <img src="img/Calabresa com borda de catupiry.png" alt="Calabresa com borda de catupiry">
+            <p>Calabresa com borda de catupiry</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Calabresa.png" alt="Calabresa">
+            <p>Calabresa</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Calabresa-meia-Marguerita.png" alt="Calabresa e Marguerita">
+            <p>Calabresa & Marguerita</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Calabresa-meia-Mussarela.png" alt="Calabresa e Mussarela">
+            <p>Calabresa & Mussarela</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Escarola-meio-frango.png" alt="Escarola e Frango">
+            <p>Escarola I & Frango I</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Frango I com borda recheada de cheddar.png" alt="Frango I com borda de cheddar">
+            <p>Frango I com borda de cheddar</p>
+          </div>
+          <div class="pizza-item teste fade-in">
+            <img src="img/Marguerita.png" alt="Marguerita">
+            <p>Marguerita</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Meia calabresa meia portuguesa.png" alt="Meia Calabresa meia Portuguesa">
+            <p>Meia Calabresa & Portuguesa</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Meia marguerita meia calabresa.png" alt="Meia Marguerita meia Calabresa">
+            <p>Meia Marguerita & Calabresa</p>
+          </div>
+          <div class="pizza-item mcmmh fade-in">
+            <img src="img/Mussarela crocante-meia-Hambúrguer.png" alt="Mussarela crocante meia Hambúrguer">
+            <p>Mussarela crocante & Hambúrguer</p>
+          </div>
+          <div class="pizza-item m fade-in">
+            <img src="img/Mussarela.png" alt="Mussarela">
+            <p>Mussarela</p>
+          </div>
+          <div class="pizza-item n fade-in">
+            <img src="img/Namorado.png" alt="Namorado">
+            <p>Namorado</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Portuguesa.png" alt="Portuguesa">
+            <p>Portuguesa</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Portuguesa-meia-A Moda da Casa.png" alt="Portuguesa meia A Moda da Casa">
+            <p>Portuguesa & A Moda da Casa</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Portuguesa-meia-Calabresa.png" alt="Portuguesa meia Calabresa">
+            <p>Portuguesa & Calabresa</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Quatroqueijos-meia-Calabresa.png" alt="Quatro queijos meia Calabresa">
+            <p>Quatro queijos & Calabresa</p>
+          </div>
+          <div class="pizza-item fade-in">
+            <img src="img/Toscana Calabresa Fatiada.png" alt="Toscana Calabresa Fatiada">
+            <p>Toscana Calabresa Fatiada</p>
+          </div>
+        </div>
+        
+</div>
+</div>
+
+<div class="image-text fade-in">
+  <img src="img/aplicativo.png" alt="Imagem ao lado" class="image-side" width="100" height="auto">
+  <div class="text-side">
+    <h2>Aplicativo</h2>
+    <p>Agora você já pode fazer um pedido pelo seu smartphone ou tablet. Escolha entre nossa variedade de produtos em nosso cardápio.</p>
+    <a href="https://play.google.com/store/search?q=portal+das+pizzas&c=apps&hl=pt_BR" class="btn-download">
+      <img src="img/playstore.png" alt="Download Icon" class="icon">
+      Baixar App
+    </a>
+  </div>
+</div>
+
+<div class="modal fade" id="appDownloadModal" tabindex="-1" aria-labelledby="appDownloadModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-black text-white">
+      
+      <div class="modal-header border-0 justify-content-center">
+        <img src="img/logooriginal.png" alt="Logo" width="130" height="90" class="d-inline-block align-text-top">
+        <h5 class="modal-title text-center" id="appDownloadModalLabel">Faça seu pedido!</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Quer pedir nossas deliciosas pizzas diretamente pelo seu Smartphone ou Tablet? <br>
+        Baixe nosso aplicativo agora mesmo!</p>
+        
+        <a href="https://play.google.com/store/search?q=portal+das+pizzas&c=apps&hl=pt_BR" class="btn-download2" style="margin-top:20px">
+          <img src="img/playstore.png" alt="Download Icon" class="icon" > 
+          Baixar App
+        </a>
+<p style="margin-top:27px; font-size:20px;">Ou<p>
+        <div class="qr-code-section mt-4">
+          <h5> Escaneie o QR Code abaixo:</h5>
+          <img src="img/qrcode.png" alt="QR Code" class="img-fluid mt-3" style="max-width: 200px; height: auto;">
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal" style=" background-color: #FDC806; color: rgb(0, 0, 0);">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="https://wa.me/11937792291" target="_blank" style="position: fixed; bottom: 40px; right: 20px; z-index: 1000;">
+  <img src=" img/whatsapp.png" alt="WhatsApp" style="width: 60px; height: 60px; border-radius: 50px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+</a>
+
+
+<footer class="homepage fade-in">
+  <div class="footer-content">
+    <img src="img/logooriginal.png" alt="Logo" class="footer-logo">
+  </div>
+  <div class="footer-content2">
+    <a href="https://www.instagram.com/portaldaspizzas.jdnordeste/"><img src="img/instagram.png" alt="Logo" class="footer-logo1"></a>
+    <a href="https://play.google.com/store/search?q=portal+das+pizzas&c=apps&hl=pt_BR"><img src="img/google-play-store-new.png" alt="Logo" class="footer-logo2"></a>
+  </div>
+  <div class="footer-text">
+    <p>© Copyright 2024 - Todos os direitos reservados por Pizzaria Portal das Pizzas</p>
+  </div>
+</footer>
+<script src="js.js"></script>
+</body>
+</html>

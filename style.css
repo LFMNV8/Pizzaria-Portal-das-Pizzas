@@ -1,0 +1,1193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'); /* Importa a fonte Inter */
+
+
+*{  
+    
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    padding: 0;
+    
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 12px; 
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f4f4f4; 
+    border-radius: 20px; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #FDC806; 
+    border-radius: 20px; 
+    border: 3px solid #fff; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d4a305; 
+}
+
+
+.logoprincipal{
+    animation: slideInFromLeft 1s ease-out; 
+}
+
+.navbar-custom {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #FDC806; 
+    border-bottom: 12px solid black; 
+    z-index: 1050; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+footer{
+    background: linear-gradient(to bottom, #FDC806, #000000);
+    height: 225.5px;
+    padding: 20px 0;
+    text-align: center;
+    
+    
+     
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.footer-logo {
+    width: 95px;  
+    height: auto;
+}
+
+.footer-content2 {
+    display: flex; 
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 20px; 
+}
+  
+.footer-logo1, .footer-logo2 {
+    width: 50px; 
+    height: auto;
+}
+
+.footer-text {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #ccc;
+    text-decoration: none;
+}
+  
+.footer-text p {
+    margin: 0;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 10000px; 
+    margin: auto;
+}
+
+.image-container img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay p {
+    margin-top: 25%;
+    width: 75%;
+    font-size: 35px; 
+    font-weight: bold;
+    color: white;
+    text-shadow:
+        5px 5px 0 black,
+        -1px 1px 0 black,
+        10px -1px 0 black,
+        -1px -1px 0 black;
+    animation: slideInFromLeft 1s ease-out;
+    margin-left: 3.5%;
+}
+
+.btn-order {
+    display: inline-block;
+    background-color: #FDC806; 
+    padding: 10px; 
+    border: none; 
+    border-radius:20px; 
+    font-weight: 900; 
+    cursor: pointer; 
+    text-transform: uppercase; 
+    z-index: 3;
+    text-shadow:
+        1px 1px 0 white,
+        -1px 1px 0 white,
+        1px -1px 0 white,
+        -1px -1px 0 white;
+    transition: transform 0.5s ease-in-out;
+    margin-top: -6px;
+    width: 50%;
+    margin-left: 3.5%;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+
+.btn-order:hover{
+    transform: scale(1.1);
+}
+
+.btn-order a {
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+
+.overlay img{
+    width: 87px;
+    height: 57px;
+    animation: slideInFromLeft 1s ease-out;
+    
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+
+
+.modal-title {
+    color: #FDC806;
+    font-size: 26px; 
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+    transition: transform 2s ease-in-out;
+    padding-top: 10px; 
+}
+
+
+.modal-title:hover {
+    transform: scale(1.1); 
+}
+
+.retangulo-preto {
+    width: 100%; 
+    height: 410px; 
+    background: linear-gradient(to bottom, #000000 95%,#FFFFFF 100%);
+
+    
+    
+    
+
+}
+
+.retangulo-preto h1 {
+    color: #FDC806;
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15px;
+
+    transition: transform 2 ease-in-out
+}
+
+
+
+
+
+.roda {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start; 
+    align-items: center;
+    overflow-x: hidden; 
+    cursor: grab;
+     
+    
+}
+.roda.dragging {
+    cursor: grabbing; 
+}
+
+
+.pizza-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -40px;
+    width: 200px;
+    flex-shrink: 0;
+    transition: transform 1s ease-out;
+    animation: slideInFromLeft 1s ease-out; 
+}
+
+.pizza-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.pizza-item p {
+    color: #FDC806;
+    font-size: 17px;
+    text-align: center;
+    margin-top: -31px;
+    animation: slideInFromLeft 1s ease-out; 
+}
+
+.teste img{
+    width: 140%;
+}
+
+.teste p{
+    margin-top: 8px;
+}
+
+.amn p{
+    margin-top: -15px
+}
+
+.cbc p{
+    margin-top: -17px;
+}
+
+.cci img{
+    width: 117%;
+}
+
+.cci p{
+    margin-top: -57px;
+}
+
+.mcmmh img{
+    width: 130%;
+    margin-top: 19%;
+
+}
+
+.mcmmh p{
+    margin-top: 10px;
+}
+
+.m img{
+    width: 110%;
+}
+
+
+.n img{
+    width: 105%;
+}
+
+.n p{
+    margin-top: 2px;
+}
+
+
+.linhaamarela{
+    width: 100%;
+    height: 12px;
+    margin-top: 15px;
+    background-color: #FDC806;
+    
+}
+
+
+
+
+.custom-img1 {
+    width: 110%;
+    
+    
+
+}
+
+.pizza-item:hover{
+    transform: scale(1.1);
+}
+
+.image-text {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in.appear {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+.image-side {
+    width: 170%; 
+    height: auto;
+    margin-right: 20px; 
+}
+  
+.text-side h2 {
+    color: #FDC806;
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+.text-side p {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    width:90% ;
+}
+
+.btn-download {
+    display: flex; 
+    align-items: center; 
+    background-color: black; 
+    color: white; 
+    text-decoration: none; 
+    padding: 20px 30px; 
+    border-radius: 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: transform 0.4s ease-in-out;
+    width: 176px;
+}
+
+.btn-download .icon {
+    margin-right: 10px; 
+}
+
+.btn-download:hover {
+    transform: scale(1.1); 
+}
+
+
+.btn-download2{
+    margin-top: 20px;
+    background-color: #FDC806;
+    color: white;
+    text-decoration: none; 
+    padding: 10px 20px; 
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: transform 0.4s ease-in-out;
+    width: 176px;
+    text-shadow: 
+        1px 1px 0 black,
+        -1px 1px 0 black,
+        1px -1px 0 black,
+        -1px -1px 0 black;
+    
+}
+
+.btn-download2:hover {
+    transform: scale(1.1);
+}
+
+.no-link {
+    text-decoration: none; 
+    color: inherit; 
+  }
+
+.no-link:hover {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+
+.navbar .dropdown-menu {
+    background-color: #000; 
+    border: none;
+    border-radius: 20px;
+    
+    
+}
+
+
+.navbar .dropdown-item {
+    color: #fff; 
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #444; 
+    color: #fff;
+    border-radius:15px;
+}
+
+
+.navbar .dropdown-toggle::after {
+    color: #000000; 
+}
+
+.nav-link {
+    position: relative;
+    color: #000; 
+    text-decoration: none; 
+    transition: color 0.3s ease-in-out; 
+}
+
+.nav-link:hover {
+    
+    color: #000000; 
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px; 
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+    
+}
+
+.nav-link:hover::after {
+    width: 100%;
+     
+}
+
+.logo-menor{
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-menor:hover{
+    transform: scale(1.1);
+}
+
+
+.zoom-container {
+    position: relative;
+    display: inline-block;
+}
+
+.zoom-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.zoom-lens {
+    position: absolute;
+    border: 2px solid #FDC806;
+    width: 100px; 
+    height: 100px;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: crosshair;
+    display: none; 
+    z-index: 10;
+}
+
+.imagem-promocao{
+    width: 100%;
+    animation: slideInFromLeft 1s ease-out; 
+}
+
+.sobrenos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: silver;
+    opacity: 0.2;
+
+}
+
+.sobrenos h2{
+    text-align: center;
+    color: #FDC806;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sobrenos p{
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+
+}
+
+.homepage{
+    margin-top: 25px;
+}
+
+@media screen and (min-width: 1825px) and (max-width:2003px){
+    .overlay p {
+        margin-top:8%;
+        width:25%;
+        font-size: 39px; 
+        font-weight: bold;
+        color: white;
+        text-shadow:
+            5px 5px 0 black,
+            -1px 1px 0 black,
+            10px -1px 0 black,
+            -1px -1px 0 black;
+        animation: slideInFromLeft 1s ease-out;
+        margin-left: 3.5%;
+    }
+    
+    .btn-order {
+        display: inline-block;
+        background-color: #FDC806; 
+        padding: 10px; 
+        border: none; 
+        border-radius:20px; 
+        font-weight: 900; 
+        cursor: pointer; 
+        text-transform: uppercase; 
+        z-index: 3;
+        text-shadow:
+            1px 1px 0 white,
+            -1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+        transition: transform 0.5s ease-in-out;
+        margin-top: -6px;
+        width: 15%;
+        margin-left: 3.5%;
+        animation: slideInFromLeft 1s ease-out;
+    }
+    
+    
+    .overlay img{
+        width: 90px;
+        height: 60px;
+        margin-top: -30px;
+        animation: slideInFromLeft 1s ease-out;
+        
+    }
+
+    .image-side{
+        margin-top: 25px;
+        width: 37%;
+
+    }
+    .text-side p{
+        font-size: 20px;
+        width: 60%;
+    }
+    .text-side h2{
+        font-size: 50px;
+        
+    }
+    .image-text{
+        margin-left: 30%;
+
+    }
+
+    .logoprincipal{
+        margin-left: 205px;
+    }
+
+    .nav-link{
+        margin-right: 50px;
+        
+    }
+    .retangulo-preto{
+        height: 600px;
+    }
+    .pizza-item{
+        width: 15%;
+    }
+    .pizza-item p{
+        font-size: 20px;
+    }
+    .retangulo-preto h1{
+        font-size: 50px;
+    }
+
+    .navbar .dropdown-menu{
+        margin-left: -105px;
+    }
+
+    #appDownloadModalLabel{
+        margin-left: 20%;
+    }
+}
+
+
+@media screen and (min-width: 1617px) and (max-width:1825px){
+    .overlay p {
+        margin-top:8%;
+        width:25%;
+        font-size: 39px; 
+        font-weight: bold;
+        color: white;
+        text-shadow:
+            5px 5px 0 black,
+            -1px 1px 0 black,
+            10px -1px 0 black,
+            -1px -1px 0 black;
+        animation: slideInFromLeft 1s ease-out;
+        margin-left: 3.5%;
+    }
+    
+    .btn-order {
+        display: inline-block;
+        background-color: #FDC806; 
+        padding: 10px; 
+        border: none; 
+        border-radius:20px; 
+        font-weight: 900; 
+        cursor: pointer; 
+        text-transform: uppercase; 
+        z-index: 3;
+        text-shadow:
+            1px 1px 0 white,
+            -1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+        transition: transform 0.5s ease-in-out;
+        margin-top: -6px;
+        width: 15%;
+        margin-left: 3.5%;
+        animation: slideInFromLeft 1s ease-out;
+    }
+    
+    
+    .overlay img{
+        width: 90px;
+        height: 60px;
+        margin-top: -30px;
+        animation: slideInFromLeft 1s ease-out;
+        
+    }
+
+    .image-side{
+        width: 40%;
+
+    }
+    .text-side p{
+        font-size: 20px;
+        width: 60%;
+    }
+    .text-side h2{
+        font-size: 50px;
+        
+    }
+    .image-text{
+        margin-left: 30%;
+
+    }
+
+    .navbar .dropdown-menu{
+        margin-left: -105px;
+    }
+
+    #appDownloadModalLabel{
+        margin-left: 20%;
+    }
+    
+}
+
+
+@media screen and (min-width: 1409px) and (max-width:1617px){
+    .overlay p {
+        margin-top:8%;
+        width:26%;
+        font-size: 39px; 
+        font-weight: bold;
+        color: white;
+        text-shadow:
+            5px 5px 0 black,
+            -1px 1px 0 black,
+            10px -1px 0 black,
+            -1px -1px 0 black;
+        animation: slideInFromLeft 1s ease-out;
+        margin-left: 3.5%;
+    }
+    
+    .btn-order {
+        display: inline-block;
+        background-color: #FDC806; 
+        padding: 10px; 
+        border: none; 
+        border-radius:20px; 
+        font-weight: 900; 
+        cursor: pointer; 
+        text-transform: uppercase; 
+        z-index: 3;
+        text-shadow:
+            1px 1px 0 white,
+            -1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+        transition: transform 0.5s ease-in-out;
+        margin-top: -6px;
+        width: 15%;
+        margin-left: 3.5%;
+        animation: slideInFromLeft 1s ease-out;
+    }
+    
+    
+    .overlay img{
+        width: 90px;
+        height: 60px;
+        margin-top: -30px;
+        animation: slideInFromLeft 1s ease-out;
+        
+    }
+
+    .image-side{
+        width: 40%;
+
+    }
+    .text-side p{
+        font-size: 20px;
+        width: 60%;
+    }
+    .text-side h2{
+        font-size: 50px;
+        
+    }
+    .image-text{
+        margin-left: 30%;
+
+    }
+
+    .navbar .dropdown-menu{
+        margin-left: -105px;
+    }
+
+    .navbar-nav{
+        gap: 20px;
+    }
+
+    #appDownloadModalLabel{
+        margin-left: 20%;
+    }
+
+    
+}
+
+@media screen and (min-width: 1201px) and (max-width:1408px){
+    .overlay p {
+        margin-top:8%;
+        width:35%;
+        font-size: 39px; 
+        font-weight: bold;
+        color: white;
+        text-shadow:
+            5px 5px 0 black,
+            -1px 1px 0 black,
+            10px -1px 0 black,
+            -1px -1px 0 black;
+        animation: slideInFromLeft 1s ease-out;
+        margin-left: 3.5%;
+    }
+    
+    .btn-order {
+        display: inline-block;
+        background-color: #FDC806; 
+        padding: 10px; 
+        border: none; 
+        border-radius:20px; 
+        font-weight: 900; 
+        cursor: pointer; 
+        text-transform: uppercase; 
+        z-index: 3;
+        text-shadow:
+            1px 1px 0 white,
+            -1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+        transition: transform 0.5s ease-in-out;
+        margin-top: -6px;
+        width: 20%;
+        margin-left: 3.5%;
+        animation: slideInFromLeft 1s ease-out;
+    }
+    
+    
+    .overlay img{
+        width: 90px;
+        height: 60px;
+        margin-top: -30px;
+        animation: slideInFromLeft 1s ease-out;
+        
+    }
+
+    .image-side{
+        width: 70%;
+
+    }
+    .text-side p{
+        font-size: 20px;
+        width: 60%;
+    }
+    .text-side h2{
+        font-size: 50px;
+        
+    }
+    .image-text{
+        margin-left: 30%;
+
+    }
+
+    .imgcentral12{
+        margin-left: 95px;
+    }
+    .navbar .dropdown-menu{
+        margin-left: -105px;
+    }
+
+    .navbar-nav{
+        gap: 20px;
+    }
+
+    #appDownloadModalLabel{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px){
+    .overlay p {
+        margin-top:12%;
+        width:39%;
+        font-size: 39px; 
+        font-weight: bold;
+        color: white;
+        text-shadow:
+            5px 5px 0 black,
+            -1px 1px 0 black,
+            10px -1px 0 black,
+            -1px -1px 0 black;
+        animation: slideInFromLeft 1s ease-out;
+        margin-left: 3.5%;
+    }
+    
+    .btn-order {
+        display: inline-block;
+        background-color: #FDC806; 
+        padding: 10px; 
+        border: none; 
+        border-radius:20px; 
+        font-weight: 900; 
+        cursor: pointer; 
+        text-transform: uppercase; 
+        z-index: 3;
+        text-shadow:
+            1px 1px 0 white,
+            -1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+        transition: transform 0.5s ease-in-out;
+        margin-top: -6px;
+        width: 19%;
+        margin-left: 3.5%;
+        animation: slideInFromLeft 1s ease-out;
+    }
+    
+    
+    .overlay img{
+        width: 90px;
+        height: 60px;
+        margin-top: -30px;
+        animation: slideInFromLeft 1s ease-out;
+        
+    }
+
+    .image-side{
+        width: 100%;
+
+    }
+    .text-side p{
+        font-size: 20px;
+        width: 60%;
+    }
+    .text-side h2{
+        font-size: 50px;
+        
+    }
+    .image-text{
+        margin-left: 30%;
+
+    }
+
+    .navbar .dropdown-menu{
+        margin-left: -105px;
+    }
+
+    .navbar-nav{
+        gap: 20px;
+    }
+    #appDownloadModalLabel{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width:991px ){
+   
+    .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 1000px; 
+        margin: auto;
+    }
+    
+    .image-container img{
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .overlay p {
+        margin-top:15%;
+        width: 45%;
+        font-size: 35px; 
+        font-weight: bold;
+        color: white;
+        text-shadow:
+            5px 5px 0 black,
+            -1px 1px 0 black,
+            10px -1px 0 black,
+            -1px -1px 0 black;
+        animation: slideInFromLeft 1s ease-out;
+        margin-left: 3.5%;
+    }
+    
+    .btn-order {
+        display: inline-block;
+        background-color: #FDC806; 
+        padding: 10px; 
+        border: none; 
+        border-radius:20px; 
+        font-weight: 900; 
+        cursor: pointer; 
+        text-transform: uppercase; 
+        z-index: 3;
+        text-shadow:
+            1px 1px 0 white,
+            -1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+        transition: transform 0.5s ease-in-out;
+        margin-top: -6px;
+        width: 30%;
+        margin-left: 3.5%;
+        animation: slideInFromLeft 1s ease-out;
+    }
+    
+    
+    .btn-order:hover{
+        transform: scale(1.1);
+    }
+    
+    .btn-order a {
+        text-decoration: none;
+        color: #000000;
+        
+    }
+    
+    
+    .overlay img{
+        width: 90px;
+        height: 60px;
+        animation: slideInFromLeft 1s ease-out;
+        margin-top: 10px;
+        
+    }
+    .image-side{
+        width: 40%;
+
+    }
+
+    #appDownloadModalLabel{
+        margin-left: 6%;
+    }
+
+    
+}
+
+@media screen and (max-width: 762px){
+    .overlay p{
+        width: 50%;
+        font-size: 29.5px;
+        margin-top: 22%;
+    }
+
+   
+
+    .btn-order{
+        padding: 10px;
+        width:30%;
+        font-size: 13px;
+        
+    }
+
+    .overlay img{
+        margin-top: 10px;
+        
+    }
+
+    #appDownloadModalLabel{
+        width: 35%;
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 578px){
+    .overlay p{
+        width: 80%;
+        font-size: 36.5px;
+        margin-top: 22%;
+    }
+
+
+    .btn-order{
+        padding: 10px;
+        width:40%;
+        font-size: 15px;
+        
+    }
+
+    #appDownloadModalLabel{
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 479px){
+    .overlay p{
+        width:70%;
+        font-size: 29.5px;
+        margin-top: 22%;
+    }
+
+
+    .btn-order{
+        padding: 10px;
+        width:40%;
+        font-size: 13px;
+        
+    }
+
+    #appDownloadModalLabel{
+        width: 50%;
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .overlay p{
+        width:90%;
+        font-size: 35.5px;
+        margin-top: 30%;
+    }
+
+
+    .btn-order{
+        padding: 10px;
+        width:40%;
+        font-size: 15px;
+        
+    }
+
+    #appDownloadModalLabel{
+        width: 50%;
+        margin-left: -15%;
+    }
+
+}
+
+@media screen and (max-width: 386px){
+    .overlay p{
+        width:90%;
+        font-size: 33px;
+        margin-top: 30%;
+    }
+
+
+    .btn-order{
+        padding: 10px;
+        width:40%;
+        font-size: 13px;
+        
+    }
+
+    .homepage{
+        margin-top: 20px;
+    }
+    .btn-order{
+        font-size: 10px;
+    }
+    #appDownloadModalLabel{
+        margin-left: -3%;
+    }
+}
